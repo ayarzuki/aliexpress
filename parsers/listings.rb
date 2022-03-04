@@ -3,7 +3,7 @@ nokogiri = Nokogiri.HTML(content)
 #load products
 products = nokogiri.css('h1._18_85')
 products.each do |product|
-  a_element = product.at_css('a.product')
+  a_element = product.at_css('a._3t7zg _2f4Ho')
   if a_element
     url = URI.join('https:', a_element['href']).to_s.split('?').first
     if url =~ /\Ahttps?:\/\//i
